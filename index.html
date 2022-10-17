@@ -1,3 +1,54 @@
-<html>
-<h1>This is my code</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="main">
+        <img src='./assets/img/pinkBackground.jpg' class="show"/>
+        <div class="next js-next">
+            <i class="fas fa-shoe-prints"></i>
+            <i class="fas fa-shoe-prints" style="margin-right:30px ;"></i>
+            <i class="fas fa-shoe-prints"></i>
+            <i class="fas fa-shoe-prints"></i>
+        </div>
+        <div class="info js-info">
+            <div class="text">
+                <p>Chúc mừng bạn, giờ thì nhập MSSV để nhận lời chúc nào :3</p>
+            </div>
+            <div class="inp">
+                <input type="text" class="mssv">
+                <a href="./index2.html">
+                    <input type="submit" value="OKAY, let's go!" class="ok">
+                </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        // input mssv
+        const foots = document.querySelectorAll('.js-next')
+        const info = document.querySelector('.js-info')
+
+        function openmodalticket() {
+            info.classList.add('open')
+        }
+        function removemodalticket() {
+            info.classList.remove('open')
+        }
+
+        for(const foot of foots) {
+            foot.addEventListener('click', openmodalticket)
+        }
+    </script>
+</body>
 </html>
