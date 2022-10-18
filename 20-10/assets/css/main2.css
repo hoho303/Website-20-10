@@ -1,0 +1,118 @@
+
+.main {
+    background: url("../img/background0.jpg") no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    opacity: 0.8;
+}
+
+.main .frame img{
+    position: absolute;
+}
+
+.love {
+    display: block;
+}
+
+.forever {
+    display: none;
+}
+
+.memory {
+    display: none;
+}
+
+.khung {
+    position: absolute;
+    width: 56%;
+    top: -8%;
+    left: 22%;
+}
+
+.banhtroi {
+    position: absolute;
+    width: 10%;
+}
+
+.love .banhtroi {
+    top: 63.5%;
+    left: 33%;
+}
+
+.forever .banhtroi {
+    top: 54%;
+    left: 33%;
+}
+
+.memory .banhtroi {
+    top: 53%;
+    left: 35%;
+}
+
+.tao {
+    position: absolute;
+    width: 12%;
+    left: 32%;
+    bottom: 0;
+}
+
+.hoa {
+    position: absolute;
+    width: 8%;
+    top: 6%;
+    right: 32.5%;
+}
+
+.nhan {
+    position: absolute;
+    width: 16%;
+    top: -4%;
+    right: 30%;
+}
+
+.anhdao {
+    position: absolute;
+    right: 0;
+    top: -2%;
+    width: 20%;
+}
+
+.content {
+    position: absolute;
+    background-color: rgba(249, 237, 237, 0.6);
+    box-shadow: 5px 10px rgba(101, 99, 99, 0.4);
+    border-radius: 16px;
+}
+
+.love .content {
+    width: 400px;
+    height: 260px;
+    top: 16%;
+    left: 36%;
+}
+
+.forever .content, .memory .content {
+    width: 280px;
+    height: 240px;
+    top: 32%;
+    left: 46%;
+}
+
+.image {
+    position: absolute;
+    width: 240px;
+    border-radius: 4px;
+}
+
+.love .image {
+    top: 56%;
+    left: 50%;
+}
+
+.forever .image, .memory .image {
+    top: 12%;
+    left: 36%;
+}
