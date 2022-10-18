@@ -1,4 +1,5 @@
 
+
 .main {
     background: url("../img/background0.jpg") no-repeat;
     background-size: cover;
@@ -13,9 +14,9 @@
     position: absolute;
 }
 
-/* .love {
-    display: none;
-} */
+.love {
+    display: block;
+}
 
 .forever {
     display: none;
@@ -80,45 +81,39 @@
     width: 20%;
 }
 
-.bike {
+.content {
     position: absolute;
-    width: 24%;
-    bottom: 0;
-    right: 4%;
+    background-color: rgba(249, 237, 237, 0.6);
+    box-shadow: 5px 10px rgba(101, 99, 99, 0.4);
+    border-radius: 16px;
 }
 
-.thap {
-    position: absolute;
-    width: 40%;
-    bottom: -8%;
-    left: -8%;
+.love .content {
+    width: 400px;
+    height: 260px;
+    top: 16%;
+    left: 36%;
 }
 
-.not1 {
-    position: absolute;
-    width: 16%;
-    top: -8%;
-    left: 0;
-}
-
-.not2 {
-    position: absolute;
-    width: 12%;
-    top: 8%;
-    left: 18%;
-}
-
-.not3 {
-    position: absolute;
-    width: 8%;
+.forever .content, .memory .content {
+    width: 280px;
+    height: 240px;
     top: 32%;
-    left: 12%;
+    left: 46%;
 }
 
-.gau {
-    position:absolute;
-    width: 10%;
-    bottom: 26%;
-    right: 18%;
+.image {
+    position: absolute;
+    width: 240px;
+    border-radius: 4px;
 }
 
+.love .image {
+    top: 56%;
+    left: 50%;
+}
+
+.forever .image, .memory .image {
+    top: 12%;
+    left: 36%;
+}
