@@ -157,3 +157,75 @@
         transform: translate(0);
     }
 }
+
+.guid {
+    display: flex;
+    align-items: center;
+}
+
+.guid b {
+    font-size: 24px;
+    
+}
+
+.guid {
+    display: none;
+}
+
+.guid.open {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    z-index: 5;
+}
+
+.well {
+    position: relative;
+    max-width: calc(100% - 32px);
+    width: 480px;
+    height: 600px;
+    animation: modalFaceIn ease .5s;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-image: linear-gradient(to top, rgb(48, 48, 102), rgb(28, 28, 57));
+    box-shadow: inset;
+    border-radius: 20px;
+}
+
+.guid img {
+    margin-top: 60px;
+    width: 320px;
+}
+
+.guid h1, .guid h3, .guid button {
+    color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.guid button {
+    width: 80px;
+    height: 40px;
+    background-color: rgb(15, 15, 149);
+    border: solid 1px white;
+}
+
+@keyframes modalFaceIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
