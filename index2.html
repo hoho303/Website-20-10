@@ -16,7 +16,7 @@
   />
 </head>
 <body>
-    <div class="main">
+    <div id="main" class="main">
         <div class="frame">
             <div class="animation">
                 <div class="love">
@@ -57,6 +57,19 @@
            
         </div>
     </div>
+
+    <audio id="player" autoplay loop>
+        <source src="./assets/music/1.mp3" type="audio/mp3">
+    </audio>
+
     <script src="./assets/js/main.js"></script>
+    <script>
+        var main = document.getElementById('main');
+        // catch main hover
+        main.addEventListener('mouseover', function() {
+            // play audio
+            document.getElementById('player').play();
+        });
+    </script>
 </body>
 </html>

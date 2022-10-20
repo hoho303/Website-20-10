@@ -77,7 +77,7 @@
       ></script>
       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
       <script src="./assets/js/myJs.js"></script>
-    <div class="main">
+    <div id="main" class="main">
         <!-- <img src='./assets/img/pinkBackground.jpg' class="show"/> -->
         <div class="guid js-guid open">
             <div class="well">
@@ -98,6 +98,18 @@
             </div>
         </a>
     </div>
+
+    <audio id="player" autoplay loop>
+      <source src="./assets/music/1.mp3" type="audio/mp3">
+  </audio>
+  <script>
+    var main = document.getElementById('main');
+        // catch main hover
+    main.addEventListener('mouseover', function() {
+            // play audio
+        document.getElementById('player').play();
+    });
+  </script>
     <script>
         // buy ticket
         const guid = document.querySelector('.js-guid')
