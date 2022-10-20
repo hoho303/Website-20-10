@@ -1,77 +1,98 @@
 
 
+
 .main {
     background: url("../img/background0.jpg") no-repeat;
-    background-size: cover;
+    background-size: 100%;
     width: 100vw;
     height: 100vh;
+    max-height: fit-content;
     position: relative;
     overflow: hidden;
     opacity: 0.8;
-}
-
-.main .frame img{
-    position: absolute;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 .love {
     display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vw;
 }
 
 .forever {
     display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vw;
 }
 
 .memory {
     display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vw;
 }
 
 .khung {
     position: absolute;
-    width: 56%;
-    top: -8%;
+    width: 54%;
+    top: -2%;
     left: 22%;
 }
 
 .banhtroi {
     position: absolute;
     width: 10%;
+    z-index: 999;
 }
 
 .love .banhtroi {
-    top: 63.5%;
+    position: absolute;
+    top: 31.5%;
     left: 33%;
 }
 
 .forever .banhtroi {
-    top: 54%;
+    top: 25%;
     left: 33%;
 }
 
 .memory .banhtroi {
-    top: 53%;
-    left: 35%;
+    top: 24.5%;
+    left: 36%;
 }
 
 .tao {
     position: absolute;
     width: 12%;
     left: 32%;
-    bottom: 0;
+    top: 37%;
+    z-index: 123;
 }
 
 .hoa {
     position: absolute;
     width: 8%;
-    top: 6%;
-    right: 32.5%;
+    top: 5%;
+    right: 34.5%;
+    z-index: 123;
 }
 
 .nhan {
     position: absolute;
     width: 16%;
-    top: -4%;
-    right: 30%;
+    top: 0%;
+    right: 32.5%;
+    z-index: 123;
 }
 
 .anhdao {
@@ -79,6 +100,7 @@
     right: 0;
     top: -2%;
     width: 20%;
+    z-index: 123;
 }
 
 .content {
@@ -89,31 +111,56 @@
 }
 
 .love .content {
-    width: 400px;
-    height: 260px;
-    top: 16%;
-    left: 36%;
+    width: 32%;
+    height: 20%;
+    top: 6%;
+    left: 32.5%;
 }
 
-.forever .content, .memory .content {
-    width: 280px;
-    height: 240px;
-    top: 32%;
-    left: 46%;
+.forever .content{
+    width: 32%;
+    height: 27%;
+    top: 5.5%;
+    left: 33%;
+}
+
+.memory .content {
+    width: 29%;
+    height: 27%;
+    top: 5.5%;
+    left: 34%;
 }
 
 .image {
     position: absolute;
-    width: 240px;
+    width: 16%;
     border-radius: 4px;
 }
 
 .love .image {
-    top: 56%;
-    left: 50%;
+    top: 27.5%;
+    left: 46%;
 }
 
-.forever .image, .memory .image {
-    top: 12%;
-    left: 36%;
+.content p {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: large;
+    /* text-align: left; */
+    text-align: justify;
+}
+
+.love .content p {
+    margin-top: 4%;
+    line-height: 1.3;
+}
+
+.forever .content p {
+    margin-top: 28%;
+    line-height: 1.8;
+}
+
+.memory .content p {
+    margin-top: 28%;
+    line-height: 1.5;
 }
