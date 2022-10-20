@@ -145,7 +145,7 @@
 .content p {
     margin-left: 20px;
     margin-right: 20px;
-    font-size: large;
+    font-size: 1.2vw;
     /* text-align: left; */
     text-align: justify;
 }
